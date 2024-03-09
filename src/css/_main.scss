@@ -1,0 +1,114 @@
+$primary: #20b757;
+$secondary1: #4371e9;
+$secondary2: #ff6161;
+$secondary3: #bd7b00;
+
+
+section,
+footer {
+	overflow: hidden;
+	overflow-x: hidden !important;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		font-size: inherit;
+		font-weight: inherit;
+	}
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 150%;
+	padding: 0;
+	background-color: transparent;
+}
+
+input,
+textarea {
+	padding: 12px 20px;
+	width: 100%;
+	outline-color: transparent;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: transparent;
+	border: 1px solid #B3B6B9;
+
+	&::placeholder {
+		color: #FFFFFF;
+		font-size: 16px;
+	}
+}
+
+.max-auto {
+	max-width: 100%;
+}
+
+.max-un {
+	max-width: unset;
+}
+
+.d-rtl {
+	direction: rtl;
+}
+
+.v-line {
+	&::before {
+		position: absolute;
+		content: '';
+		width: 1px;
+		height: 40px;
+		background-color: rgb(var(--p7));
+	}
+
+	&.lg::before {
+		height: 15px;
+	}
+
+	&.lgx::before {
+		height: 110px;
+		width: 2px;
+		background-color: rgba(255, 255, 255, 0.20);
+	}
+
+	&.lg2::before {
+		height: 17px;
+		padding: 1px;
+		background-color: rgba(var(--s2), 1) !important;
+	}
+
+	&.xl::before {
+		background-color: rgb(var(--p7)) !important;
+		height: 15px;
+	}
+
+	&.sm::before {
+		height: 25px;
+	}
+
+	&.smx::before {
+		width: 1px;
+		height: 20px;
+		background: rgba(255, 255, 255, 0.20);
+	}
+
+	&.dashed::before {
+		border-right: 1px dashed rgb(var(--n5));
+		background: transparent;
+	}
+}
+iframe {
+	border: 0;
+	width: 100%;
+}
